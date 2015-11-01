@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>gtkrc</string>
+	</array>
+	<key>name</key>
+	<string>gtkrc</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Inline comments</string>
+			<key>match</key>
+			<string>\#.*$</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Special keywords</string>
+			<key>match</key>
+			<string>\b(style|class|widget(_class)?|include|engine)</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Some special characters</string>
+			<key>match</key>
+			<string>(\{|\}|\=)</string>
+			<key>name</key>
+			<string>support.class</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Color constants</string>
+			<key>match</key>
+			<string>\"\#.*\"</string>
+			<key>name</key>
+			<string>entity.name.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Color variables</string>
+			<key>match</key>
+			<string>\@\w*</string>
+			<key>name</key>
+			<string>variable</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>String constants</string>
+			<key>match</key>
+			<string>\"[^\"]*\"</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Operators</string>
+			<key>match</key>
+			<string>(::|=)</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Function names</string>
+			<key>match</key>
+			<string>\w*\s*\(</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Function ends</string>
+			<key>match</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>support.function</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Arrays</string>
+			<key>match</key>
+			<string>\b\w*\[.*\]</string>
+			<key>name</key>
+			<string>storage.modifier</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numeric constants</string>
+			<key>match</key>
+			<string>\d*[\.\d+]?</string>
+			<key>name</key>
+			<string>constant</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.gtkrc</string>
+	<key>uuid</key>
+	<string>0a571546-066f-4ebe-bc95-963eabaad8c8</string>
+</dict>
+</plist>

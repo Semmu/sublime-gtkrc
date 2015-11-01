@@ -1,0 +1,58 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+#
+# Pretty dump syntax definition for .gtkrc files.
+# https://github.com/Semmu/sublime-gtkrc
+#
+# Laszlo Boros
+# November 2015
+
+name: gtkrc
+scopeName: source.gtkrc
+fileTypes: [gtkrc]
+uuid: 0a571546-066f-4ebe-bc95-963eabaad8c8
+
+patterns:
+- comment: Inline comments
+  name: comment.line
+  match: \#.*$
+
+- comment: Special keywords
+  name: support.class
+  match: \b(style|class|widget(_class)?|include|engine)
+
+- comment: Some special characters
+  name: support.class
+  match: (\{|\}|\=)
+
+- comment: Color constants
+  name: entity.name.function
+  match: \"\#.*\"
+
+- comment: Color variables
+  name: variable
+  match: \@\w*
+
+- comment: String constants
+  name: string
+  match: \"[^\"]*\"
+
+- comment: Operators
+  name: support.function
+  match: (::|=)
+
+- comment: Function names
+  name: support.function
+  match: \w*\s*\(
+
+- comment: Function ends
+  name: support.function
+  match: \)
+
+- comment: Arrays
+  name: storage.modifier
+  match: \b\w*\[.*\]
+
+- comment: Numeric constants
+  name: constant
+  match: \d*[\.\d+]?
+
